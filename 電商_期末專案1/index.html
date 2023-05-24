@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/scrip.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="left">
+            <div class="icon">
+                <p><a href="index.html" style="color: #FBF5F3;">Noodle</a><span><img style="width: 30px; height: 30px;" src="https://cdn-icons-png.flaticon.com/512/3814/3814390.png" alt=""></span></p>
+            </div>
+            <div class="list">
+                <hr style="text-align: center;">
+                <a href="#main" data-page="main">熱銷商品</a>
+                <a href="#kr" data-page="kr">韓國泡麵</a>
+                <a href="#jp" data-page="jp">日本泡麵</a>
+                <a href="#sea" data-page="sea">東南亞泡麵</a>
+                <a href="#tw" data-page="tw">台灣泡麵</a>
+                <a href="login.html">會員登入&註冊</a>
+                <a href="">購物須知</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="main" class="page active">
+                <div class="adv">
+                    <div class="container">
+                        <div class="slide fade">
+                            <img src="https://picsum.photos/1400/500?random=5">
+                            <div class="text">Cat One</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="https://picsum.photos/1400/500?random=6">
+                            <div class="text">Cat Two</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="https://picsum.photos/1400/500?random=7">
+                            <div class="text">Cat Three</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="https://picsum.photos/1400/500?random=8">
+                            <div class="text">Cat Four</div>
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="showSlides(1)"></span>
+                        <span class="dot" onclick="showSlides(2)"></span>
+                        <span class="dot" onclick="showSlides(3)"></span>
+                        <span class="dot" onclick="showSlides(4)"></span>
+                    </div>
+                    
+                </div>
+                <div class="com">
+                    <label for=""><a href=""><img src="image/JP/000001_1478259551.jpg"><p>【日本創意一品】醬油拉麵(88gx5P)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1573719792.png"><p>韓國不倒翁 起司風味乾拌杯麵 (55g)<br>$12</p></a></label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1579079857.jpg"><p>養養 香濃酸辣蝦味麵350g<br>$12</p></a></label>
+                    <label for=""><a href=""><img src="image/TW/000001_1589276665.jpg"><p>維力一度贊 紅燒牛肉(3包/袋)<br>$12</p></a></label>
+                    <label for=""><a href=""><img src="image/KR/000001_1576813452.png"><p>韓國不倒翁Q拉麵(純麵條)5入<br>$12</p></a></label>
+                    <label for=""><a href=""><img src="image/JP/000001_1478259556.jpg"><p>【日本創意一品】鹽味拉麵(89gx5P)<br>$12</p></a></label>
+                </div>
+
+            </div>
+
+            <div id="kr" class="page">
+                <div class="title">
+                    <img src="https://picsum.photos/1400/500?random=7">
+                </div>
+                <div class="cls com">
+                    <label for=""><a href=""><img src="image/KR/000001_1573719792.png"><p>韓國不倒翁 起司風味乾拌杯麵 (55g)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1576813452.png"><p>韓國不倒翁Q拉麵(純麵條)5入<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1578641782.jpg"><p>韓國農心爽口烏龍麵(4入)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1657005962.jpg"><p>韓國《農心》辛拉麵(4入)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1673081145.jpg"><p>韓國火魔王辣味乾炒拉麵130g<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/KR/000001_1679378677.jpg"><p>韓國 少林麻辣麵(135gX4入)<br>$12</p></a> </label>
+                </div>
+
+            </div>
+
+            <div id="jp" class="page">
+                <div class="title">
+                    <img src="https://picsum.photos/1400/500?random=5">
+                </div>
+                <div class="cls com">
+                    <label for=""><a href=""><img src="image/JP/000001_1478259551.jpg"><p>【日本創意一品】醬油拉麵(88gx5P)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/JP/000001_1478259556.jpg"><p>【日本創意一品】鹽味拉麵(89gx5P)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/JP/000001_1515122813.jpg"><p>日本《明星》夜店炒麵醬味135g<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/JP/000001_1552268027.jpg"><p>日本《明星》海帶拉麵99g<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/JP/000001_1637555604.jpg"><p>花月嵐大蒜拳骨激辣拉麵禮盒組 (1盒/2人份)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/JP/000001_1680748580.jpg"><p>明星炸豆皮烏龍碗麵110gX3<br>$12</p></a> </label>
+                </div>
+            </div>
+
+            <div id="sea" class="page">
+                <div class="title">
+                    <img src="https://picsum.photos/1400/500?random=6">
+                </div>
+                <div class="cls com">
+                    <label for=""><a href=""><img src="image/SEA/000001_1579079857.jpg"><p>養養 香濃酸辣蝦味麵350g<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1581671164.jpg"><p>KOOL 螃蟹味鹹蛋黃乾拌麵4入(368g)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1624526771.jpg"><p>MAMEE 金廚南洋咖哩風味麵(404g)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1633749445.jpg"><p>益福檳城白咖哩麵105g*4包/袋<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1668390992.jpg"><p>印尼炒麵-原味(85g*40包)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/SEA/000001_1683083438.png"><p>越南瑞法河粉(牛肉風味)70g*3入組<br>$12</p></a> </label>
+                </div>
+            </div>
+
+            <div id="tw" class="page">
+                <div class="title">
+                    <img src="https://picsum.photos/1400/500?random=8">
+                </div>
+                <div class="cls com">
+                    <label for=""><a href=""><img src="image/TW/000001_1589276665.jpg"><p>維力一度贊 紅燒牛肉(3包/袋)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/TW/000001_1620801190.jpg"><p>來一客杯麵 _鮮蝦魚板風味麵(3杯/組)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/TW/000001_1621820801.jpg"><p>維力 炸醬麵重量包123g(4包/袋)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/TW/000001_1637031306.jpg"><p>《滿漢大餐》珍味牛肉麵 (3包入)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/TW/000001_1659318666.jpg"><p>味丹《味味A》排骨雞湯麵(5包)<br>$12</p></a> </label>
+                    <label for=""><a href=""><img src="image/TW/000001_1663118593.jpg"><p>台酒TTL 花雕雞麵(200gx3包/袋)<br>$12</p></a> </label>
+                </div>
+            </div>
+
+            <div class="footer">
+                <hr style="height: 3px; background-color: black;">
+                <div style="width: 200px; margin: 20px auto; text-align: center;">
+                    <p style=" font-size: 20px;">Follow Noodle</p>
+                    <a href="" ><img src="image/174855.png" alt="" style="width: 30px; height: 30px;"></a>
+                    <a href="" ><img src="image/2989993.png" alt="" style="width: 30px; height: 30px;"></a>
+                    <a href="" ><img src="image/4701482.png" alt="" style="width: 30px; height: 30px;"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // 監聽超連結的點擊事件
+        var links = document.querySelectorAll('a[data-page]');
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener('click', function(e) {
+            e.preventDefault(); // 防止超連結跳轉
+    
+            var target = this.getAttribute('href'); // 取得目標頁面的ID
+            var pages = document.querySelectorAll('.page');
+    
+            // 移除所有頁面的 active 類別
+            for (var j = 0; j < pages.length; j++) {
+              pages[j].classList.remove('active');
+            }
+    
+            // 添加目標頁面的 active 類別
+            document.querySelector(target).classList.add('active');
+          });
+        }
+      </script>
+</body>
+</html>

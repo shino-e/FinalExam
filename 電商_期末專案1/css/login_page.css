@@ -1,0 +1,114 @@
+/** {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+hr {
+    margin: 10px;
+}
+
+.page1 {
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid rgb(241, 237, 237);
+    box-shadow: 0 0 30px rgb(241, 237, 237);
+    backdrop-filter: biur(5px);
+    margin: 0px auto;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+}
+
+.form {
+    width: 400px;
+    font-family: 'Note Sans TC', sans-serif;
+    color: black;
+    margin: 0px auto;
+
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    padding: bottom 20px;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+}
+
+.form .group {
+    margin-bottom: 20px;
+
+}
+
+.form lable {
+    line-height: 2;
+}
+
+.form input {
+    width: 100%;
+    border: 1px solid rgb(46, 46, 46);
+    line-height: 3;
+    border-radius: 5px;
+}
+
+.form .button-group {
+    font-size: 0;
+    margin-top: 50px;
+}
+
+
+.form .button {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(114, 114, 229);
+    width: 190px;
+    padding: 10px 0;
+    color: white;
+}
+
+.form .button-group :hover {
+    background-color: rgb(153, 153, 235);
+    color: white;
+}
+
+
+.form .button a {
+    color: white;
+    text-decoration: none;
+}
+
+.form .button2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.form .button2 {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(114, 114, 229);
+    width: 400px;
+    padding: 10px 0;
+    color: white;
+}
+
+.form .button+.button {
+    margin-left: 20px;
+}
