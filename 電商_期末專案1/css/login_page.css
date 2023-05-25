@@ -72,34 +72,12 @@ hr {
     margin-top: 50px;
 }
 
-
-.form .button {
-    font-size: 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(114, 114, 229);
-    width: 190px;
-    padding: 10px 0;
-    color: white;
-}
-
 .form .button-group :hover {
     background-color: rgb(153, 153, 235);
     color: white;
 }
 
-
-.form .button a {
-    color: white;
-    text-decoration: none;
-}
-
-.form .button2 a {
-    color: white;
-    text-decoration: none;
-}
-
-.form .button2 {
+.form .button {
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -109,6 +87,45 @@ hr {
     color: white;
 }
 
-.form .button+.button {
-    margin-left: 20px;
+
+.form .button a {
+    color: white;
+    text-decoration: none;
+}
+
+/*添加分隔線中的文字-或是*/
+.hr-text {
+    position: relative;
+    height: 1px;
+    background-color: #808080;
+    margin: 50px 0;
+}
+
+.hr-text span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 5px 10px;
+    color: #808080;
+}
+
+.fb_login {
+    color: #3B5998;
+    text-align: center;
+    margin: 50px;
+}
+
+.fb_login a {
+    color: #3B5998;
+    text-decoration: none;
+}
+
+.member_logout {
+    text-align: center;
+}
+
+.member_logout a {
+    color: rgb(114, 114, 229);
 }
