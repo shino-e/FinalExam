@@ -22,13 +22,13 @@ hr {
 
 .page1 {
     width: 600px;
-    height: 700px;
+    height: 650px;
     background-color: white;
     border-radius: 10px;
     border: 5px solid rgb(241, 237, 237);
     box-shadow: 0 0 30px rgb(241, 237, 237);
     backdrop-filter: biur(5px);
-    margin: 0px auto;
+    margin: 50px auto;
     /*display: flex;
     justify-content: center;
     align-items: center;*/
@@ -40,7 +40,6 @@ hr {
     font-family: 'Note Sans TC', sans-serif;
     color: black;
     margin: 0px auto;
-
 }
 
 .form h2 {
