@@ -1,5 +1,5 @@
 const itemObj = {
-    0: {name: '123', description: '樂事只選用當令新鮮馬鈴薯，鮮切成金黃香脆洋芋片；以剛剛好的調味與天然薯香搭成完美絕配。最好吃的樂事洋芋片，隨時享受簡單的快樂！', price: '25', img: 'chips.jpg'},
+    0: {name: '樂事洋芋片-海苔口味', description: '樂事只選用當令新鮮馬鈴薯，鮮切成金黃香脆洋芋片；以剛剛好的調味與天然薯香搭成完美絕配。最好吃的樂事洋芋片，隨時享受簡單的快樂！', price: '25', img: 'chips.jpg'},
     1: {name: '維力炸醬麵', description: '維力炸醬麵，麵體Q、料香濃，乾麵附湯一包兩吃，道地家鄉口味是全家大小百吃不厭的好口味！', price: '20', img: 'noodle.jpg'},
     2: {name: '麥香奶茶', description: '奶茶-獨特大麥香味讓人回味無窮', price: '15', img: 'milktea.jpg'},
     3: {name: '麥香紅茶', description: '紅茶-獨特大麥香味讓人回味無窮', price: '15', img: 'blacktea.jpg'},
