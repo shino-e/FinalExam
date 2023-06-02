@@ -1,0 +1,106 @@
+body{
+    background-color: #FFEEDD;
+    color: #663300;
+    text-align: center;
+}
+
+.me{
+    text-align: center;
+}
+
+.me{
+    width: 800px;
+    margin: 50px auto;
+    overflow: hidden; /* 避免長方框下面顯示不正常 */
+}
+.img{
+    width: 300px;
+    float:left; /* 圖片在左邊 */
+    padding: 10px 10px 0px 60px;
+    vertical-align: middle;
+}
+.img img{
+    display: block;
+    width:100%;
+    border-radius:80%;
+    
+}
+.information{
+    float: right;  /* 文字在右邊 */
+    width: 330px;
+    padding: 30px 30px 0px 0px;
+    text-align: left;
+  }
+
+h1{
+    text-align: center;
+    color: #663300;
+}
+
+hr{
+    width: 50%;
+    color:#FFD1A4;
+    font-size: 2;
+}
+
+.record{
+    clear: both;
+
+}
+
+table{
+    text-align: center;
+    width: 750;
+
+}
+
+.consumer{
+    padding: 10px;
+}
+
+.consumer .td{
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    font-size: larger;
+}
+
+.comment{
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+/*設定星星圖*/
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ddd; /*背景星星顏色*/
+    overflow: hidden;
+    font-size: 30px; /*調整字體大小可放大縮小星星*/
+    text-shadow: 0px 1px 0 #999;
+    }
+
+.full_star1 ,.full_star2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #FFDC35; /*前景星星顏色*/
+}
+.full_star1{
+    width: 80%; /*調整寬度可變更星等*/
+}
+
+.full_star2 {
+    width: 100%;
+}
+
+
+section{
+    padding: 10px;
+}
+
