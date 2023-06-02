@@ -1,21 +1,3 @@
-/** {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 hr {
     margin: 10px;
 }
@@ -29,10 +11,6 @@ hr {
     box-shadow: 0 0 30px rgb(241, 237, 237);
     backdrop-filter: biur(5px);
     margin: 50px auto;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-
 }
 
 .form {
@@ -72,7 +50,7 @@ hr {
 }
 
 .form .button-group :hover {
-    background-color: rgb(153, 153, 235);
+    background-color:#e1770d;
     color: white;
 }
 
@@ -80,7 +58,7 @@ hr {
     font-size: 20px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(114, 114, 229);
+    background-color: #9F5000;
     width: 400px;
     padding: 10px 0;
     color: white;
@@ -126,5 +104,5 @@ hr {
 }
 
 .member_logout a {
-    color: rgb(114, 114, 229);
+    color: #9F5000;
 }
