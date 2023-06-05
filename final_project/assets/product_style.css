@@ -94,3 +94,79 @@ a:active {
     text-decoration: none;
     color: black;
 }
+
+
+
+.left {
+    background-color:#9F5000 ;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+.right {
+    background-color: #FBF5F3;
+    width: 80%;
+    float: right;
+}
+
+.com {
+    margin-top: 20px;
+}
+
+.com {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.com label {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    object-fit: cover;
+    /*border-radius: 10px;*/
+}
+
+.com img {
+    width: 100%;
+    max-width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+label p {
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.list {
+    margin: 0px 20px;
+}
+
+.left .icon {
+    font-size: 20px;
+    margin: 55px 20px;
+    color: #FBF5F3;
+}
+
+.list a {
+    margin: 20px 0px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FBF5F3;
+}
+
+.com a {
+    text-decoration: none;
+    color: #000022;
+}
+
