@@ -14,21 +14,11 @@ let items;
 
 window.onload = async function(){
     addListener();
-    items = await getData2();
+    items = itemObj;
     setItem(items [urlParams.get('id')]);
     if(tmp = Math.floor){
 
     }
-}
-
-function getData1() {
-    fetch('https://tqs0p3lx9g.execute-api.us-east-1.amazonaws.com/default/CYCU0531')
-    .then((response) => {
-        return response.json()
-    }).then((obj) => {
-        console.log('fetch ok!');
-        return obj.items;
-    });
 }
 
 async function getData2() {
@@ -40,7 +30,7 @@ async function getData2() {
 
 function setItem(obj) {
     $("#modalTitle").text(obj.name);
-    $("#modalImg").attr("src", './img/' + obj.imgURL);
+    $("#modalImg").attr("src", './img/' + obj.img);
     $("#modalText").text(obj.description);
     $("#modalPrice").text('售價：$' + obj.price);
     $("#num").val("0");
