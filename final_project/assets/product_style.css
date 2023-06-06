@@ -191,3 +191,15 @@ label p {
     color: #000022;
 }
 
+.pro {
+    width: 90%;
+    margin: 20px auto;
+    height: 400px;
+    background-color: red;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 100%;
+  }
+
