@@ -6,9 +6,10 @@
 
 .modalCenter {
     position: absolute;
-    top: 51% !important;
+    top: 40% !important;
     transform: translateY(-40%);
     text-align: center;
+    z-index: 1 !important;
 }
 
 
@@ -41,8 +42,8 @@
 }
 
 .content {
-    width: 100vw;
-    margin-top: 10vh;
+   /* width: 100vw;
+    margin-top: 10vh;*/
     padding: 0.5rem 1rem;
     height: auto;
 
@@ -121,12 +122,14 @@ a:active {
     width: 20%;
     height: 100%;
     position: fixed;
+    z-index: 100 !important;
 }
 
 .right {
     background-color: #FBF5F3;
     width: 80%;
     float: right;
+
 }
 
 .com {
