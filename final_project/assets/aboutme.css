@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    color: #663300;
+}
+
+.description{
+    text-align: center;
+    color: #663300;
+    font-size: 18px;
+
+}
+
+.flag{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.flag.img{
+    width: 200px;
+}
+
+ul,ol{
+    text-align: left;
+    padding-left: 20%;
+    color: black;
+    font-size: 18px;
+}
+
+.description2{
+    text-align: left;
+    color: #663300;
+    font-size: 18px;
+    padding-left: 20%;
+}
+
+.line{
+    width: 80%;
+    color:#FFD1A4;
+    font-size: 2;
+}
+
+.comment{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.pro {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+section{
+    padding: 10px;
+}
+
