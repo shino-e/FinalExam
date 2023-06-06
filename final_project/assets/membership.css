@@ -11,7 +11,7 @@
 .me{
     width: 800px;
     margin: 50px auto;
-    overflow: hidden; /* 避免長方框下面顯示不正常 */
+    overflow: hidden;
 }
 .img{
     width: 350px;
@@ -52,7 +52,6 @@ h1{
 table{
     text-align: center;
     width: 750;
-
 }
 
 .consumer{
@@ -71,7 +70,6 @@ table{
     padding: 10px;
 
 }
-
 
 /*設定星星圖*/
 .ratings {
@@ -103,5 +101,53 @@ table{
 
 section{
     padding: 10px;
+}
+
+/*留言板*/
+.board2{
+    text-align: left;
+    padding-left:20%;
+   
+}
+
+form {
+    width: 400px;
+    font-family: 'Note Sans TC', sans-serif;
+    color: black;
+    margin: 0px auto;
+}
+
+form .group {
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+.name {
+    line-height: 2;
+}
+
+form .button-group {
+    margin-top: 30px;;
+    text-align: center;
+}
+
+form .button-group :hover {
+    background-color:#e1770d;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #9F5000;
+    width: 400px;
+    padding: 10px 0;
+    color: white;
+}
+
+form .button a {
+    color: white;
+    text-decoration: none;
 }
 

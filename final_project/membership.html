@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>membership</title>
     <link rel="stylesheet" href="assets/membership.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -98,7 +98,47 @@
             </section>
             </div>
 
+            <div class="right">
+                <section>
+                        <h1>新增留言</h1>
+                        <hr class="line">
+                        <form id="message-form">
+                            <div class="board2">
+                                <div class="group">
+                                    <label for="name">姓名：</label>
+                                    <input type="text" id="name" required>
+                                    <br>
+                                </div>
 
+                                <div class="group">
+                                    <label for="content">內容：</label>
+                                    <textarea id="content" rows="4" required></textarea><br>
+                                </div>
+
+                                <div class="group">
+                                    <label for="rating">評分：</label>
+                                    <select id="rating" required>
+                                        <option value="1">1顆星</option>
+                                        <option value="2">2顆星</option>
+                                        <option value="3">3顆星</option>
+                                        <option value="4">4顆星</option>
+                                        <option value="5">5顆星</option>
+                                    </select><br>
+                                </div>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit">提交</button>
+                            </div>
+                        </form>
+                        
+
+                        <h1>留言列表</h1>
+                        <hr class="line">
+                        <div id="message-list"></div>
+                    
+                </section>
+            </div>
+        </div>
             <div class="right">
             <div class="footer">
                 <hr style="height: 3px; background-color: black;">
@@ -111,5 +151,38 @@
             </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var form = document.getElementById('message-form');
+              var messageList = document.getElementById('message-list');
+        
+              form.addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                var name = document.getElementById('name').value;
+                var content = document.getElementById('content').value;
+                var rating = document.getElementById('rating').value;
+        
+                var messageContainer = document.createElement('div');
+                messageContainer.className = 'message-container';
+                messageContainer.innerHTML = '<strong>' + name + '：</strong>' + content;
+        
+                var ratingStars = '';
+                for (var i = 1; i <= 5; i++) {
+                  if (i <= rating) {
+                    ratingStars += '<span class="rating">&#9733;</span>';
+                  } else {
+                    ratingStars += '<span class="rating">&#9734;</span>';
+                  }
+                }
+                messageContainer.innerHTML += '<br>評分：' + ratingStars;
+        
+                messageList.appendChild(messageContainer);
+        
+                form.reset();
+              });
+            });
+        </script>
 </body>
 </html>
