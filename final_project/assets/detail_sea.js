@@ -21,13 +21,6 @@ window.onload = async function(){
     }
 }
 
-async function getData2() {
-    let response = await fetch('https://tqs0p3lx9g.execute-api.us-east-1.amazonaws.com/default/CYCU0531');
-    let obj = await response.json();
-    console.log('fetch ok!');
-    return obj.items;
-}
-
 function setItem(obj) {
     $("#modalTitle").text(obj.name);
     $("#modalImg").attr("src", './img/' + obj.img);
