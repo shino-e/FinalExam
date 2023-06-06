@@ -81,26 +81,5 @@
         </div>
 
     </div>
-
-    <script>
-        // 監聽超連結的點擊事件
-        var links = document.querySelectorAll('a[data-page]');
-        for (var i = 0; i < links.length; i++) {
-          links[i].addEventListener('click', function(e) {
-            e.preventDefault(); // 防止超連結跳轉
-    
-            var target = this.getAttribute('href'); // 取得目標頁面的ID
-            var pages = document.querySelectorAll('.page');
-    
-            // 移除所有頁面的 active 類別
-            for (var j = 0; j < pages.length; j++) {
-              pages[j].classList.remove('active');
-            }
-    
-            // 添加目標頁面的 active 類別
-            document.querySelector(target).classList.add('active');
-          });
-        }
-      </script>
 </body>
 </html>
