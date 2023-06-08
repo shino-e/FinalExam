@@ -207,3 +207,60 @@ label p {
     color: #FBF5F3 !important;
   }
 
+  section{
+    padding: 10px;
+}
+
+/*留言板*/
+.board2{
+    text-align: left;
+    padding-left:20%;
+   
+}
+
+form {
+    width: 400px;
+    font-family: 'Note Sans TC', sans-serif;
+    color: black;
+    margin: 0px auto;
+}
+
+form .group {
+    margin-bottom: 30px;
+}
+
+.name {
+    line-height: 2;
+}
+
+form .button-group {
+    margin-top: 30px;;
+    text-align: center;
+}
+
+form .button-group :hover {
+    background-color:#e1770d;
+    color: white;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #9F5000;
+    width: 400px;
+    padding: 10px 0;
+    color: white;
+}
+
+form .button a {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-content {
+    overflow: scroll;
+    height: 500px;
+    background-color: #FBF5F3 !important;
+}
+

@@ -31,23 +31,57 @@
             <div id="detailModal" class="modal modalCenter" tabindex="-1" style="display: inline;">
                 <div class="modal-dialog" style="max-width: 50%;margin-left: 550px;">
                   <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 id="modalTitle" class="modal-title"></h5>
-                    </div>
-                    <div class="modal-body">
-                        <img id="modalImg" style="width: 20vh;" src=""></img>
-                        <p id="modalText" style="overflow-wrap: break-word; margin-top: 1rem;"></p>
-                        <p id="modalPrice" style="font-size: 1.3rem;"></p>
-                        <div class="amount">
-                            <div class="btn_cart">
-                                <input type="button" id="down" value="-"></input>
-                                <input type="text" id="num" value="0"></input>
-                                <input type="button" id="up" value="+"></input>
-                            </div>
+                        <div class="modal-header">
+                            <h5 id="modalTitle" class="modal-title"></h5>
                         </div>
-                        <button type="button" class="btn btn-primary" style="margin-top: 1rem;">購買</button>
+                        <div class="modal-body">
+                            <img id="modalImg" style="width: 20vh;" src=""></img>
+                            <p id="modalText" style="overflow-wrap: break-word; margin-top: 1rem;"></p>
+                            <p id="modalPrice" style="font-size: 1.3rem;"></p>
+                            <div class="amount">
+                                <div class="btn_cart">
+                                    <input type="button" id="down" value="-"></input>
+                                    <input type="text" id="num" value="0"></input>
+                                    <input type="button" id="up" value="+"></input>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="margin-top: 1rem;">購買</button>
+                        </div>
+                        <section>
+                            <h1>新增商品評論留言</h1>
+                            <hr class="line">
+                            <form id="message-form">
+                                <div class="board2">
+                                    <div class="group">
+                                        <label for="name">姓名：</label>
+                                        <input type="text" id="name" required>
+                                        <br>
+                                    </div>
+            
+                                    <div class="group">
+                                        <label for="content">內容：</label>
+                                        <textarea id="content" rows="4" required></textarea><br>
+                                    </div>
+            
+                                    <div class="group">
+                                        <label for="rating">評分：</label>
+                                        <select id="rating" required>
+                                            <option value="1">1顆星</option>
+                                            <option value="2">2顆星</option>
+                                            <option value="3">3顆星</option>
+                                            <option value="4">4顆星</option>
+                                            <option value="5">5顆星</option>
+                                        </select><br>
+                                    </div>
+                                </div>
+                                <div class="button-group">
+                                    <button type="submit">提交</button>
+                                </div>
+                            </form>
+                            <hr style="height: 2px; background-color: black;">
+                            <div id="message-list"></div>
+                        </section>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -63,5 +97,37 @@
                 </div>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var form = document.getElementById('message-form');
+              var messageList = document.getElementById('message-list');
+        
+              form.addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                var name = document.getElementById('name').value;
+                var content = document.getElementById('content').value;
+                var rating = document.getElementById('rating').value;
+        
+                var messageContainer = document.createElement('div');
+                messageContainer.className = 'message-container';
+                messageContainer.innerHTML = '<strong>' + name + '：</strong>' + content;
+        
+                var ratingStars = '';
+                for (var i = 1; i <= 5; i++) {
+                  if (i <= rating) {
+                    ratingStars += '<span class="rating">&#9733;</span>';
+                  } else {
+                    ratingStars += '<span class="rating">&#9734;</span>';
+                  }
+                }
+                messageContainer.innerHTML += '<br>評分：' + ratingStars;
+        
+                messageList.appendChild(messageContainer);
+        
+                form.reset();
+              });
+            });
+        </script>
     </body>
 </html>
